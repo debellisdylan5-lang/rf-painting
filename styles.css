@@ -1,0 +1,35 @@
+/* ===== BRAND FOUNDATION ===== */
+    :root{--black:#0A0A0A;--gold:#C7A56A;--cream:#F5F1E9;--ink:#171714}
+    html{scroll-behavior:smooth;scroll-padding-top:5rem}
+    body{font-family:"Manrope",sans-serif;background:var(--black);color:var(--cream);overflow-x:hidden}
+    h1,h2,h3,.serif{font-family:"Cormorant Garamond",serif}
+    ::selection{background:var(--gold);color:var(--black)}
+    :focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+    .gold-rule{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+    .eyebrow{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:#9b7942}
+    .link-line{position:relative}
+    .link-line:after{content:"";position:absolute;left:0;right:100%;bottom:-5px;height:1px;background:var(--gold);transition:right .3s ease}
+    .link-line:hover:after,.link-line:focus-visible:after{right:0}
+    .logo-image{mix-blend-mode:screen}
+    .noise{background-image:radial-gradient(rgba(199,165,106,.12) .7px,transparent .7px);background-size:9px 9px}
+
+    /* ===== GALLERY CAROUSEL ===== */
+    .gallery-track{display:flex;transition:transform .65s cubic-bezier(.22,.75,.2,1);will-change:transform}
+    .gallery-slide{min-width:100%}
+    .gallery-art{background:
+      linear-gradient(135deg,rgba(199,165,106,.09),transparent 45%),
+      repeating-linear-gradient(90deg,transparent 0 54px,rgba(199,165,106,.055) 55px 56px),
+      #121210}
+    .gallery-art:after{content:"";position:absolute;inset:12%;border:1px solid rgba(199,165,106,.28);pointer-events:none}
+    .gallery-art.alt-one:after{inset:14% 24%;border-radius:999px}
+    .gallery-art.alt-two:after{inset:15%;border-width:1px 0;transform:rotate(-5deg)}
+    .gallery-art.alt-three:after{inset:12% 18%;box-shadow:18px 18px 0 -1px #121210,18px 18px 0 0 rgba(199,165,106,.22)}
+    .dot[aria-current="true"]{width:2.25rem;background:var(--gold)}
+
+    /* ===== MOBILE NAVIGATION ===== */
+    #mobile-menu{transition:opacity .25s ease,transform .25s ease}
+    #mobile-menu[hidden]{display:none}
+    @media (prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+    }
