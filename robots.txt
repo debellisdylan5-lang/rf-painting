@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://debellisdylan5-lang.github.io/rf-painting/sitemap.xml
+Sitemap: https://ryanfeauvepainting.com/sitemap.xml
